@@ -1,4 +1,4 @@
-function getRandomIntInclusive() {
+function RandomInt() {
   min = Math.ceil(1);
   max = Math.floor(10);
   a = Math.floor(Math.random() * (max - min + 1)) + min;
@@ -8,15 +8,16 @@ function getRandomIntInclusive() {
   element.value = a;
    return a;
 }
-console.log(getRandomIntInclusive());
 
 
-function nextnum() {
-let input = document.getElementById('input_id');
-  let b = input++;
+
+function nextnum(f) {
+  input = f.input_id.value;
+ b = input + 1;
 console.log(b);
  element2 = document.getElementById('result2');
  console.log(element2);
   element2.value = b;
   return b;
 }
+ 
