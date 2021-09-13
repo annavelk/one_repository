@@ -13,7 +13,7 @@ function RandomInt() {
 
 function nextnum(f) {
   input = f.input_id.value;
- b = input + 1;
+ b = parseInt(input) + 1;  // у тебя было складывание строк, нужно использовать parseInt
 console.log(b);
  element2 = document.getElementById('result2');
  console.log(element2);
