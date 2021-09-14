@@ -21,3 +21,19 @@ console.log(b);
   return b;
 }
  
+function examNum(d) {
+  numeric = parseInt(d.num_id.value);
+  console.log(numeric);
+  str = "Число входит в нужный диапазон";
+  str2 = "Ошибка! Число не входит в нужный диапазон";
+  getrange = document.getElementById('resultnum');
+  resultnum=(1 <= numeric && numeric <= 10)? str:str2;
+console.log(getrange);
+getrange.value = resultnum;
+return resultnum;
+};
+let exambutton = document.querySelector('.errorbutton');
+function fColor(){
+  if (document.getElementById('resultnum').value = 'str2') {
+    document.getElementById('exambutton').classList.remove('error');}
+  }
