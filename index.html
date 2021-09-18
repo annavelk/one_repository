@@ -1,44 +1,49 @@
-   <!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="App.css">
- <head>
- </head>
- <body>
+  <link rel="stylesheet" href="App.css">
+  <head>
+  </head>
+  <body>
+   <p>ЗАДАНИЕ 1</p>
+   <p>При нажатии на кнопку получите случайное число от 1 до 10</p>
+   <p>
+     <input type="button" value="Нажать сюда" onclick="getNumber()"/>
+   </p>
+   <p>
+     <output id="result">0</output>
+   </p> 
+   <p></p>
+   <p></p>
+   <p></p>
+   <p >ЗАДАНИЕ 2</p>
+   <p>При нажатии на кнопку любое введенное число увеличится на 1</p>
+   <form name="oneform" method="post">
+     <p>
+       <input type="text" name="input_id"/>
+     </p>
+     <p>
+       <input type="button" value="Увеличиваю на 1" onclick="nextNum(this.form)"/>
+     </p>
+     <p>
+       <output id="nextnumber">0</output>
+     </p> 
+   </form>
+   <p></p>
+   <p></p>
+   <p></p>
+   <p>ЗАДАНИЕ 3</p>
+   <p>Введите число от 1 до 10</p>
+   <form name="form" method="post">
+     <p>
+       <input type="text" name='num_id'/>
+     </p>
+     <p>
+       <input type="button" value="Проверка" onclick="examNum(this.form)"/>
+     </p>
+     <p>
+       <output name="errorbuttun" class="error" id="resultnum" >0</output>
+   </form>
 
-
-  <p style="text-align: center">ЗАДАНИЕ 1</p>
-  <p style="text-align: center">
-    <input type="button" value="Нажми меня нежно" onclick="RandomInt()"/>
-  </p>
-
- <p style="text-align: center">
-  <output id="result">0</output>
-</p> 
-
-<p></p>
-<p></p>
-<p></p>
-
-<p style="text-align: center">ЗАДАНИЕ 2</p>
-<form name="oneform" method="post">
-  <p style="text-align: center"> <input type="text" name="input_id"/> </p>
-<p style="text-align: center">
-  <input type="button" value="Увеличиваю на 1" onclick="nextnum(this.form)"/>
-</p>
-<p style="text-align: center">
-<output id="result2">0</output>
-</p> 
-</form>
-    
-<p>ЗАДАНИЕ 3</p>
-<p>Введите число от 1 до 10</p>
-<form name="form" method="post">
-<p><input type="text" name='num_id'/></p>
-<p><input type="button" value="Проверка" onclick="examNum(this.form)"/></p>
-<p><output name="errorbuttun" class="error" id="resultnum" >0</output>
-</form>
-    
-<script src="main.js"></script>
-</body>
+   <script src="c:\Projects\Nodejs\Myapp\my-app\src\main.js"></script>
+ </body>
 </html>
-   
